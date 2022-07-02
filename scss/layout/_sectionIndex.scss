@@ -1,0 +1,58 @@
+section{
+    height: 200px;
+    width: 70%;
+    div{
+        padding: 20px;
+        width: 70%;
+        background-color:$colorNav;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
+        animation-name: trasladarse;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        @keyframes trasladarse{
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(200px,0px);
+                background-image: linear-gradient(to right, #cf809e , #8f133c);
+            }
+            50%{
+                transform: translate(0px,0px)
+            }
+            75%{
+                transform: translate(-200px,0px);
+                background-image: linear-gradient(to right, #8f133c , #cf809e);
+            }
+            100%{
+                transform: translate(0px,0px)
+                
+            }
+        }
+            p{
+                font-family: calibri;
+                font-size: 28px;
+                color:$colorBody;
+                padding: 10px;
+                text-align: center;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                text-align: center;
+                background-color:$colorBody;
+                padding: 10px;
+                border-radius: 30px;
+                margin: 5px;
+                margin-inline: 15px;
+                font-family: calibri;
+                color:$colorPagina;
+                width: 200px;
+                height: 50px;
+                font-size: 20px;
+            }    
+    }              
+}

@@ -1,0 +1,34 @@
+.headerIndex{
+    width: 100%;
+    height: 450px;
+    .headerIndex__div{
+        background-image: url(../assets/img/fondoIndex.png);
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items:stretch ;
+            h1{
+                color:$colorH1;
+                height: 200px;
+                text-align: center;
+                align-items: center;
+                padding-top: 80px;
+                &:hover{
+                    transition: 2s;
+                    transform: scale(1.5);
+                }
+            }
+            p{
+                font-size: 25px;
+                color:$colorPagina;
+                text-align: center;
+                height: auto;
+                padding: 25px;
+                padding-top: 30px;
+                align-items: center;
+            }
+        }
+    }
